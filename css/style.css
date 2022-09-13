@@ -46,6 +46,7 @@ body {
 
 img {
   border-radius: 50%;
+  width: 50%;
 }
 
 a {
@@ -55,6 +56,24 @@ a {
 .hero {
   background-color: black;
   color: white;
+}
+.hero nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+.hero nav ul li {
+  margin: 1em;
+  list-style-type: none;
+}
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .m-1 {

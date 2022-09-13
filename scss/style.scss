@@ -16,6 +16,7 @@ body {
 
 img {
   border-radius: 50%;
+  width: 50%;
 }
 
 a {
@@ -31,7 +32,27 @@ a {
   // 1. $variables
   // 2. nesting (dont forget about the ampersand (&) parent selector!)
   // 3. At-Rules
-  @include set-bg(black)
+  @include set-bg(black);
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      li {
+        margin: 1em;
+        list-style-type: none;
+      }
+    }
+  }
+
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 // This code is related to some of the aspects of SCSS we have yet to cover.
