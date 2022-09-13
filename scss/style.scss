@@ -17,10 +17,12 @@ body {
 img {
   border-radius: 50%;
   width: 50%;
+  margin: 1em;
 }
 
 a {
   text-decoration: none;
+	color: text-color-picker($primary-color)
 }
 
 .hero {
@@ -32,7 +34,7 @@ a {
   // 1. $variables
   // 2. nesting (dont forget about the ampersand (&) parent selector!)
   // 3. At-Rules
-  @include set-bg(black);
+  @include set-bg($primary-color);
 
   nav {
     display: flex;
